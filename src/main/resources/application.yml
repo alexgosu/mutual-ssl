@@ -1,0 +1,21 @@
+server:
+  ssl:
+    enabled: true
+    key-store: "classpath:keystore.p12"
+    key-store-password: 123456
+    key-store-type: PKCS12
+    key-alias: "localhost (rootssl)"
+
+    client-auth: want
+    trust-store: "classpath:truststore.p12"
+    trust-store-password: 123456
+    trust-store-type: PKCS12
+
+
+auth:
+  keystore: keystore.p12
+  password: 123456
+
+logging:
+  level:
+    root: debug
